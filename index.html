@@ -17,6 +17,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
 
+  <!-- Prevent hotlink referrer blocks on external image CDNs -->
+  <meta name="referrer" content="no-referrer" />
+
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -135,7 +138,7 @@
       display: block;
       width: 100%;
       height: 100%;
-      object-fit: contain;
+      object-fit: cover;
     }
     .ba-before-wrapper {
       position: absolute;
@@ -147,9 +150,10 @@
     }
     .ba-before-img {
       display: block;
+      width: 100%;
       height: 100%;
       max-width: none;
-      object-fit: contain;
+      object-fit: cover;
     }
     .ba-handle {
       position: absolute;
@@ -234,7 +238,8 @@
         <!-- Upper-Left Original Brand Logo (Preserved aspect ratio, clean clear space, no container box) -->
         <a href="#home" data-route="home" class="flex items-center gap-3.5 py-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-copper rounded" aria-label="MI3 Home Improvements LLC Home">
           <img
-            src="https://raw.githubusercontent.com/CreativeTugsDotCom/SSE/refs/heads/main/4a52fc7d-86ff-49dd-abf3-ddb7cba6d7c8.webp"
+            src="https://raw.githubusercontent.com/CreativeTugsDotCom/SSE/main/4a52fc7d-86ff-49dd-abf3-ddb7cba6d7c8.webp"
+            referrerpolicy="no-referrer"
             alt="MI3 Home Improvements LLC Official Logo"
             class="brand-logo-clean h-12 sm:h-14 md:h-16 w-auto object-contain block"
           />
@@ -461,7 +466,8 @@
       <div class="p-6 sm:p-8">
         <div class="flex items-center gap-3 mb-4">
           <img
-            src="https://raw.githubusercontent.com/CreativeTugsDotCom/SSE/refs/heads/main/4a52fc7d-86ff-49dd-abf3-ddb7cba6d7c8.webp"
+            src="https://raw.githubusercontent.com/CreativeTugsDotCom/SSE/main/4a52fc7d-86ff-49dd-abf3-ddb7cba6d7c8.webp"
+            referrerpolicy="no-referrer"
             alt="MI3 Home Improvements LLC"
             class="brand-logo-clean h-10 w-auto object-contain"
           />
@@ -514,7 +520,8 @@
         <div class="lg:col-span-4 space-y-5">
           <a href="#home" data-route="home" class="inline-flex items-center gap-3.5 py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-copper rounded" aria-label="MI3 Home Improvements LLC Home">
             <img
-              src="https://raw.githubusercontent.com/CreativeTugsDotCom/SSE/refs/heads/main/4a52fc7d-86ff-49dd-abf3-ddb7cba6d7c8.webp"
+              src="https://raw.githubusercontent.com/CreativeTugsDotCom/SSE/main/4a52fc7d-86ff-49dd-abf3-ddb7cba6d7c8.webp"
+              referrerpolicy="no-referrer"
               alt="MI3 Home Improvements LLC Official Logo"
               class="h-12 sm:h-14 w-auto object-contain block"
             />
@@ -637,14 +644,14 @@
      */
 
     const GENUINE_ASSETS = {
-      logo: 'https://raw.githubusercontent.com/CreativeTugsDotCom/SSE/refs/heads/main/4a52fc7d-86ff-49dd-abf3-ddb7cba6d7c8.webp',
+      logo: 'https://raw.githubusercontent.com/CreativeTugsDotCom/SSE/main/4a52fc7d-86ff-49dd-abf3-ddb7cba6d7c8.webp',
       pairs: [
         {
           id: 'pair-1',
           title: 'Bathroom Transformation',
           category: 'Genuine MI3 Project — Before and After',
-          beforeUrl: 'https://raw.githubusercontent.com/CreativeTugsDotCom/SSE/refs/heads/main/fe011d87-471c-462b-b8d3-230d18530a46.webp',
-          afterUrl: 'https://raw.githubusercontent.com/CreativeTugsDotCom/SSE/refs/heads/main/f75ec548-d919-4b3a-aa89-4773551f8619.webp',
+          beforeUrl: 'https://raw.githubusercontent.com/CreativeTugsDotCom/SSE/main/fe011d87-471c-462b-b8d3-230d18530a46.webp',
+          afterUrl: 'https://raw.githubusercontent.com/CreativeTugsDotCom/SSE/main/f75ec548-d919-4b3a-aa89-4773551f8619.webp',
           beforeAlt: 'Bathroom interior prior to remodeling by MI3 Home Improvements LLC',
           afterAlt: 'Completed bathroom remodeling project by MI3 Home Improvements LLC',
           note: 'Side-by-side comparison showing the initial space and the completed interior remodeling work.'
@@ -653,8 +660,8 @@
           id: 'pair-2',
           title: 'Residential Interior Transformation',
           category: 'Genuine MI3 Project — Before and After',
-          beforeUrl: 'https://raw.githubusercontent.com/CreativeTugsDotCom/SSE/refs/heads/main/unnamed%20(9).jpg',
-          afterUrl: 'https://raw.githubusercontent.com/CreativeTugsDotCom/SSE/refs/heads/main/unnamed%20(10).jpg',
+          beforeUrl: 'https://raw.githubusercontent.com/CreativeTugsDotCom/SSE/main/unnamed%20(9).jpg',
+          afterUrl: 'https://raw.githubusercontent.com/CreativeTugsDotCom/SSE/main/unnamed%20(10).jpg',
           beforeAlt: 'Residential interior room before renovation work by MI3 Home Improvements LLC',
           afterAlt: 'Completed residential interior transformation by MI3 Home Improvements LLC',
           note: 'Interactive comparison capturing surface preparation, finish improvements, and final room completion.'
@@ -665,7 +672,7 @@
           id: 'standalone-1',
           title: 'Residential Interior Project',
           category: 'Genuine MI3 Completed Work',
-          imageUrl: 'https://raw.githubusercontent.com/CreativeTugsDotCom/SSE/refs/heads/main/o.jpg',
+          imageUrl: 'https://raw.githubusercontent.com/CreativeTugsDotCom/SSE/main/o.jpg',
           alt: 'Completed residential interior remodeling project by MI3 Home Improvements LLC',
           caption: 'Completed residential interior craftsmanship photographed following project wrap-up.'
         }
@@ -679,7 +686,7 @@
         number: '01',
         title: 'Kitchen Remodeling',
         shortSummary: 'Kitchen upgrades, remodeling, interior improvements, and functional residential transformations tailored to how you live and cook.',
-        heroImage: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1400&q=85',
+        heroImage: 'https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=1400',
         imageAlt: 'Contemporary remodeled residential kitchen with natural wood cabinetry and stone surfaces',
         seoTitle: 'Kitchen Remodeling in Fairfield and New Haven Counties, CT | MI3 Home Improvements LLC',
         seoDesc: 'Custom kitchen remodeling and interior upgrades in Fairfield County and New Haven County, Connecticut by MI3 Home Improvements LLC.',
@@ -697,7 +704,7 @@
         number: '02',
         title: 'Bathroom Remodeling',
         shortSummary: 'Bathroom renovations, tile work, interior improvements, and functional upgrades built with precision and clean execution.',
-        heroImage: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1400&q=85',
+        heroImage: 'https://images.pexels.com/photos/1457847/pexels-photo-1457847.jpeg?auto=compress&cs=tinysrgb&w=1400',
         imageAlt: 'Modern remodeled residential bathroom with clean tile workmanship and natural light',
         seoTitle: 'Bathroom Remodeling in Fairfield and New Haven Counties, CT | MI3 Home Improvements LLC',
         seoDesc: 'Professional bathroom remodeling, tile work, and interior upgrades across Fairfield and New Haven Counties, Connecticut.',
@@ -715,7 +722,7 @@
         number: '03',
         title: 'Basement Remodeling',
         shortSummary: 'Basement improvements, interior finishing, and residential renovation work that unlock comfortable, usable living space.',
-        heroImage: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1400&q=85',
+        heroImage: 'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1400',
         imageAlt: 'Finished residential basement living area with warm architectural lighting and trim',
         seoTitle: 'Basement Remodeling and Finishing in Connecticut | MI3 Home Improvements LLC',
         seoDesc: 'Transform unfinished or outdated basements into comfortable living spaces across Fairfield and New Haven Counties, CT.',
@@ -733,7 +740,7 @@
         number: '04',
         title: 'Drywall Installation and Repair',
         shortSummary: 'Installation, drywall repairs, patching, finishing, and texturing for smooth, paint-ready walls and ceilings.',
-        heroImage: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=85',
+        heroImage: 'https://images.pexels.com/photos/6474471/pexels-photo-6474471.jpeg?auto=compress&cs=tinysrgb&w=1400',
         imageAlt: 'Clean residential interior wall and architectural surface preparation',
         seoTitle: 'Drywall Installation and Repair Contractor in Connecticut | MI3 Home Improvements LLC',
         seoDesc: 'Expert drywall installation, patching, seamless finishing, and texturing in Fairfield and New Haven Counties, CT.',
@@ -751,7 +758,7 @@
         number: '05',
         title: 'Finish Carpentry and Interior Trim',
         shortSummary: 'Finish carpentry, molding, trim installation, and interior detailing that bring architectural character to every room.',
-        heroImage: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=85',
+        heroImage: 'https://images.pexels.com/photos/5998120/pexels-photo-5998120.jpeg?auto=compress&cs=tinysrgb&w=1400',
         imageAlt: 'Detailed residential interior finish carpentry, crown molding, and casing',
         seoTitle: 'Finish Carpentry and Interior Trim in Connecticut | MI3 Home Improvements LLC',
         seoDesc: 'Precision finish carpentry, crown molding, baseboards, and interior trim installation across Fairfield and New Haven Counties.',
@@ -769,7 +776,7 @@
         number: '06',
         title: 'Full Home Renovation',
         shortSummary: 'Residential interior improvements and coordinated multi-room remodeling projects managed with clear communication.',
-        heroImage: 'https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?auto=format&fit=crop&w=1400&q=85',
+        heroImage: 'https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=1400',
         imageAlt: 'Cohesive whole-home interior renovation with open living and dining spaces',
         seoTitle: 'Full Home Renovation in Fairfield and New Haven Counties, CT | MI3 Home Improvements LLC',
         seoDesc: 'Coordinated full home interior renovations and multi-room remodeling in Fairfield and New Haven Counties, Connecticut.',
@@ -793,6 +800,7 @@
             <!-- AFTER IMAGE (Base layer) -->
             <img
               src="${pair.afterUrl}"
+              referrerpolicy="no-referrer"
               alt="${pair.afterAlt}"
               class="ba-after-img"
             />
@@ -800,6 +808,7 @@
             <div class="ba-before-wrapper" style="width: 50%;">
               <img
                 src="${pair.beforeUrl}"
+                referrerpolicy="no-referrer"
                 alt="${pair.beforeAlt}"
                 class="ba-before-img"
               />
@@ -875,11 +884,11 @@
               <article class="group relative overflow-hidden bg-ivory border border-stone rounded-xl p-8 sm:p-10 shadow-sm flex flex-col justify-between reveal">
                 <!-- Architectural Background Image with Warm Ivory Editorial Veil -->
                 <img
-                  src="https://raw.githubusercontent.com/CreativeTugsDotCom/SSE/refs/heads/main/43587641-21db-4186-8b4e-6c86bba3eedf.webp"
+                  src="https://raw.githubusercontent.com/CreativeTugsDotCom/SSE/main/43587641-21db-4186-8b4e-6c86bba3eedf.webp"
+                  referrerpolicy="no-referrer"
                   alt=""
                   aria-hidden="true"
                   class="absolute inset-0 w-full h-full object-cover object-left opacity-45 group-hover:scale-105 transition-transform duration-700 ease-out pointer-events-none"
-                  loading="lazy"
                 />
                 <div class="absolute inset-0 bg-gradient-to-br from-ivory/88 via-ivory/78 to-ivory/65 pointer-events-none"></div>
 
@@ -920,11 +929,11 @@
               <article class="group relative overflow-hidden bg-ivory border border-stone rounded-xl p-8 sm:p-10 shadow-sm flex flex-col justify-between reveal">
                 <!-- Architectural Background Image with Warm Ivory Editorial Veil -->
                 <img
-                  src="https://raw.githubusercontent.com/CreativeTugsDotCom/SSE/refs/heads/main/43587641-21db-4186-8b4e-6c86bba3eedf.webp"
+                  src="https://raw.githubusercontent.com/CreativeTugsDotCom/SSE/main/43587641-21db-4186-8b4e-6c86bba3eedf.webp"
+                  referrerpolicy="no-referrer"
                   alt=""
                   aria-hidden="true"
                   class="absolute inset-0 w-full h-full object-cover object-right opacity-45 group-hover:scale-105 transition-transform duration-700 ease-out pointer-events-none"
-                  loading="lazy"
                 />
                 <div class="absolute inset-0 bg-gradient-to-bl from-ivory/88 via-ivory/78 to-ivory/65 pointer-events-none"></div>
 
@@ -1061,10 +1070,10 @@
       return `
         <section class="relative py-24 lg:py-32 bg-graphite text-ivory overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1800&q=85"
+            src="https://images.pexels.com/photos/1571468/pexels-photo-1571468.jpeg?auto=compress&cs=tinysrgb&w=1800"
+            referrerpolicy="no-referrer"
             alt="Finished residential interior architecture"
             class="absolute inset-0 w-full h-full object-cover opacity-25"
-            loading="lazy"
           />
           <div class="absolute inset-0 bg-gradient-to-r from-graphite via-graphite/90 to-graphite/75"></div>
 
@@ -1166,7 +1175,8 @@
             <!-- Right Large-Format Interior Remodeling Photography -->
             <div class="lg:col-span-6 xl:col-span-6 relative min-h-[360px] lg:min-h-full">
               <img
-                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=85"
+                src="https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                referrerpolicy="no-referrer"
                 alt="Bright renovated residential interior living and kitchen space with custom millwork"
                 class="w-full h-full object-cover"
               />
@@ -1186,10 +1196,10 @@
               <div class="lg:col-span-6 relative reveal">
                 <div class="rounded-xl overflow-hidden shadow-xl border border-stone">
                   <img
-                    src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=85"
+                    src="https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                    referrerpolicy="no-referrer"
                     alt="Warm residential interior renovation showcasing clean trim, cabinetry, and natural light"
                     class="w-full aspect-[4/3] object-cover"
-                    loading="lazy"
                   />
                 </div>
                 <!-- Overlapping Architectural Accent Card -->
@@ -1373,51 +1383,52 @@
                 </p>
                 <div class="rounded-xl overflow-hidden border border-stone shadow-md">
                   <img
-                    src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1000&q=85"
+                    src="https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                    referrerpolicy="no-referrer"
                     alt="Detailed architectural interior millwork and residential finishing"
                     class="w-full aspect-[4/3] object-cover"
-                    loading="lazy"
                   />
                 </div>
               </div>
 
+              <!-- Six Core Differentiators Grid -->
               <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6 reveal">
                 ${[
                   {
+                    num: '01',
                     title: 'Attention to Detail',
-                    desc: 'From level drywall seams and crisp trim miters to aligned tile work, we focus on the finishing touches that elevate the entire room.'
+                    desc: 'From level drywall seams and crisp corner beads to tightly mitered moldings and aligned tile lines, every finish receives careful focus.'
                   },
                   {
+                    num: '02',
                     title: 'Professional Workmanship',
-                    desc: 'Experienced residential professionals execute every phase with care, proven construction methods, and pride in the finished result.'
+                    desc: 'Experienced residential construction professionals who take pride in durable preparation and clean interior execution.'
                   },
                   {
+                    num: '03',
                     title: 'Personalized Project Requirements',
-                    desc: 'We tailor layouts, finishes, and remodeling solutions to match your specific home, functional goals, and aesthetic preferences.'
+                    desc: 'Solutions shaped around your home layout, family routines, and design preferences rather than one-size-fits-all shortcuts.'
                   },
                   {
+                    num: '04',
                     title: 'Clean and Organized Work',
-                    desc: 'We protect surrounding living areas and maintain an orderly, well-organized workspace throughout the duration of your project.'
+                    desc: 'Respectful protection of surrounding living areas and orderly daily cleanup throughout your remodeling project.'
                   },
                   {
+                    num: '05',
                     title: 'Customer-Focused Communication',
-                    desc: 'You stay informed from initial consultation through final walkthrough with straightforward updates and responsive support.'
+                    desc: 'Direct, transparent updates from your initial consultation through project planning and final walkthrough.'
                   },
                   {
+                    num: '06',
                     title: 'Residential Improvement Expertise',
-                    desc: 'Focused exclusively on home remodeling and interior improvements, bringing practical solutions to kitchens, baths, basements, and living spaces.'
+                    desc: 'Focused exclusively on residential interiors, kitchens, bathrooms, basements, drywall, and finish carpentry across Connecticut.'
                   }
-                ].map((item, i) => `
-                  <div class="bg-stone/25 border border-stone rounded-xl p-7 hover:border-copper/60 transition">
-                    <span class="font-display font-bold text-sm uppercase tracking-widest text-copper block mb-2">
-                      0${i + 1}
-                    </span>
-                    <h3 class="font-display font-bold text-2xl uppercase text-graphite">
-                      ${item.title}
-                    </h3>
-                    <p class="mt-2.5 text-slate text-sm leading-relaxed">
-                      ${item.desc}
-                    </p>
+                ].map(item => `
+                  <div class="bg-stone/30 border border-stone rounded-xl p-7 hover:border-copper transition">
+                    <span class="font-display font-bold text-2xl text-copper block mb-2">${item.num}</span>
+                    <h3 class="font-display font-bold text-2xl uppercase text-graphite">${item.title}</h3>
+                    <p class="mt-2.5 text-slate text-sm leading-relaxed">${item.desc}</p>
                   </div>
                 `).join('')}
               </div>
@@ -1425,25 +1436,23 @@
           </div>
         </section>
 
-        <!-- SECTION 05: GENUINE PROJECT PORTFOLIO (Before & After Sliders + Authentic Gallery) -->
-        <section class="py-20 lg:py-28 bg-graphite text-ivory">
+        <!-- SECTION 05: AUTHENTIC MI3 PROJECT PORTFOLIO -->
+        <section class="py-20 lg:py-28 bg-graphite text-ivory border-y border-slate">
           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-14 reveal">
-              <div class="max-w-2xl">
-                <span class="text-xs font-bold uppercase tracking-widest text-copper block mb-2.5">
-                  Authentic MI3 Portfolio
-                </span>
-                <h2 class="font-display font-bold text-4xl sm:text-5xl uppercase text-ivory leading-none">
-                  Real Projects. Visible Transformations.
-                </h2>
-              </div>
-              <p class="text-ivory/80 max-w-md text-base">
-                Every photograph in this gallery documents genuine residential remodeling work completed by MI3 Home Improvements LLC. Use the sliders to compare before and after progress.
+            <div class="max-w-3xl mb-14 reveal">
+              <span class="text-xs font-bold uppercase tracking-widest text-copper block mb-2.5">
+                Authentic MI3 Portfolio
+              </span>
+              <h2 class="font-display font-bold text-4xl sm:text-5xl uppercase text-ivory leading-none">
+                Real Projects. Visible Transformations.
+              </h2>
+              <p class="mt-4 text-ivory/80 text-base sm:text-lg leading-relaxed">
+                Inspect actual residential remodeling work completed by MI3 Home Improvements LLC. Drag the comparison sliders below to examine the before-and-after progress.
               </p>
             </div>
 
             <!-- Interactive Before and After Pairs -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 text-graphite">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
               ${GENUINE_ASSETS.pairs.map((pair, idx) => renderBeforeAfterSlider(pair, idx)).join('')}
             </div>
 
@@ -1454,9 +1463,9 @@
                   <div class="rounded-lg overflow-hidden border border-ivory/15 bg-graphite">
                     <img
                       src="${GENUINE_ASSETS.standalone[0].imageUrl}"
+                      referrerpolicy="no-referrer"
                       alt="${GENUINE_ASSETS.standalone[0].alt}"
                       class="w-full max-h-[480px] object-contain mx-auto"
-                      loading="lazy"
                     />
                   </div>
                 </div>
@@ -1474,9 +1483,9 @@
                     <a
                       href="#projects"
                       data-route="projects"
-                      class="inline-flex items-center gap-2 px-6 py-3.5 rounded-md bg-ivory text-graphite font-semibold text-xs uppercase tracking-wider hover:bg-copper hover:text-ivory transition"
+                      class="inline-flex items-center gap-2 px-6 py-3.5 rounded-md bg-ivory text-graphite text-xs font-bold uppercase tracking-wider hover:bg-copper hover:text-ivory transition"
                     >
-                      <span>View Full Project Portfolio</span>
+                      <span>View Full Project Gallery</span>
                       <span aria-hidden="true">&rarr;</span>
                     </a>
                   </div>
@@ -1486,7 +1495,7 @@
           </div>
         </section>
 
-        <!-- SECTION 06: OUR APPROACH (4-Step Project Journey) -->
+        <!-- SECTION 06: OUR APPROACH (4-Step Project Journey with Tailored Photography) -->
         <section class="py-20 lg:py-28 bg-ivory">
           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-3xl mb-14 reveal">
@@ -1496,39 +1505,39 @@
               <h2 class="font-display font-bold text-4xl sm:text-5xl uppercase text-graphite leading-none">
                 A Clear, Four-Step Remodeling Journey
               </h2>
-              <p class="mt-4 text-slate text-lg">
-                From our first conversation to the finished interior transformation, our process keeps your remodeling project straightforward and well-coordinated.
+              <p class="mt-4 text-slate text-base sm:text-lg">
+                From your first conversation to final walkthrough, MI3 keeps the remodeling process straightforward and collaborative.
               </p>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
               ${[
                 {
                   step: 'Step 01',
                   title: 'Initial Consultation',
                   desc: 'Reach out by phone, email, or our online inquiry form to schedule your free consultation and introduce your home improvement goals.',
-                  bgImage: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80',
+                  bgImage: 'https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=900',
                   bgAlt: 'Homeowner calling on the phone to schedule an initial remodeling consultation'
                 },
                 {
                   step: 'Step 02',
                   title: 'Discuss Your Project',
                   desc: 'We review the rooms you want to improve, listen to your ideas, evaluate existing surfaces, and clarify your functional preferences.',
-                  bgImage: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=900&q=80',
+                  bgImage: 'https://images.pexels.com/photos/5691622/pexels-photo-5691622.jpeg?auto=compress&cs=tinysrgb&w=900',
                   bgAlt: 'Remodeling specialist reviewing interior room plans with homeowners'
                 },
                 {
                   step: 'Step 03',
                   title: 'Plan the Improvements',
                   desc: 'We outline the scope of remodeling work, coordinate material and finish selections, and establish a clear plan for your home.',
-                  bgImage: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80',
+                  bgImage: 'https://images.pexels.com/photos/8961065/pexels-photo-8961065.jpeg?auto=compress&cs=tinysrgb&w=900',
                   bgAlt: 'Project lead reviewing architectural plans and coordinating improvements with the crew'
                 },
                 {
                   step: 'Step 04',
                   title: 'Complete the Transformation',
                   desc: 'Our team executes the renovation with careful workmanship, keeps the work area clean and organized, and walks through the finished space with you.',
-                  bgImage: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80',
+                  bgImage: 'https://images.pexels.com/photos/1643384/pexels-photo-1643384.jpeg?auto=compress&cs=tinysrgb&w=900',
                   bgAlt: 'Completed renovated living room and kitchen space ready for the family to enjoy'
                 }
               ].map((item) => `
@@ -1536,38 +1545,35 @@
                   <!-- Full-bleed background photograph with subtle hover zoom -->
                   <img
                     src="${item.bgImage}"
+                    referrerpolicy="no-referrer"
                     alt="${item.bgAlt}"
                     class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 group-hover:opacity-45 transition-all duration-700 ease-out"
-                    loading="lazy"
                   />
-                  <!-- Multi-stop architectural slate/graphite gradient for effortless legibility -->
-                  <div class="absolute inset-0 bg-gradient-to-t from-graphite via-graphite/85 to-graphite/60"></div>
+                  <!-- Architectural dark gradient veil for crisp text readability -->
+                  <div class="absolute inset-0 bg-gradient-to-t from-graphite via-graphite/80 to-graphite/45"></div>
 
                   <div class="relative z-10">
-                    <span class="inline-block px-3 py-1 rounded bg-copper text-ivory text-xs font-bold uppercase tracking-widest mb-5 shadow-sm">
+                    <span class="inline-block px-3 py-1 rounded bg-copper/95 text-ivory text-xs font-bold uppercase tracking-widest">
                       ${item.step}
                     </span>
-                    <h3 class="font-display font-bold text-2xl uppercase text-ivory tracking-wide">
+                  </div>
+
+                  <div class="relative z-10 mt-16">
+                    <h3 class="font-display font-bold text-2xl uppercase text-ivory leading-tight">
                       ${item.title}
                     </h3>
-                    <p class="mt-3 text-ivory/90 text-sm leading-relaxed">
+                    <p class="mt-2.5 text-ivory/85 text-sm leading-relaxed">
                       ${item.desc}
                     </p>
                   </div>
-                  <div class="relative z-10 mt-6 h-1 w-12 bg-copper rounded group-hover:w-20 transition-all duration-300"></div>
                 </article>
               `).join('')}
             </div>
           </div>
         </section>
 
-        <!-- SECTION 07: CUSTOMER TESTIMONIALS -->
         ${renderTestimonialsSection()}
-
-        <!-- SECTION 08: SERVICE AREA -->
         ${renderServiceAreaSection()}
-
-        <!-- SECTION 09: FINAL CONVERSION SECTION -->
         ${renderFinalCtaSection()}
       `;
     }
@@ -1583,37 +1589,45 @@
               About MI3 Home Improvements LLC
             </span>
             <h1 class="font-display font-extrabold text-5xl sm:text-6xl uppercase text-ivory leading-none max-w-3xl">
-              Craftsmanship Built Around the Way You Live.
+              Craftsmanship Built Around Your Home and Vision
             </h1>
             <p class="mt-5 text-ivory/80 text-lg max-w-2xl leading-relaxed">
-              Dedicated to turning residential remodeling ideas into reality across Fairfield County and New Haven County, Connecticut.
+              Turning residential remodeling ideas into reality across Fairfield County and New Haven County, Connecticut.
             </p>
           </div>
         </section>
 
-        <section class="py-20 lg:py-24 bg-ivory">
+        <section class="py-20 lg:py-28 bg-ivory">
           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center reveal">
               <div class="lg:col-span-6 space-y-6">
-                <h2 class="font-display font-bold text-4xl uppercase text-graphite leading-tight">
-                  Residential Interior Remodeling With Careful Attention to Detail
+                <span class="text-xs font-bold uppercase tracking-widest text-copper block">
+                  Who We Are
+                </span>
+                <h2 class="font-display font-bold text-4xl sm:text-5xl uppercase text-graphite leading-none">
+                  Dedicated Residential Remodeling Professionals
                 </h2>
-                <p class="text-slate text-base sm:text-lg leading-relaxed">
-                  MI3 Home Improvements LLC focuses on residential remodeling and interior improvement projects for homeowners throughout Fairfield and New Haven Counties. We believe that successful home renovation comes down to thoughtful preparation, disciplined execution, and open communication with the people who live in the home.
+                <p class="text-slate text-lg leading-relaxed">
+                  MI3 Home Improvements LLC specializes in residential remodeling and interior home improvements. We work directly with homeowners to transform kitchens, bathrooms, basements, and living areas with careful attention to detail and dependable workmanship.
                 </p>
                 <p class="text-slate text-base leading-relaxed">
-                  Rather than treating any home as a one-size-fits-all job, we tailor our work to your specific floor plan, architectural character, and personal preferences. From kitchen and bathroom remodeling to basement finishing, drywall installation and repair, finish carpentry, and full home renovations, every project receives the same commitment to clean, organized workmanship.
+                  Every home has its own layout, character, and functional needs. Rather than applying rigid templates, our professionals tailor each remodeling project to your specific requirements and personal preferences—delivering clean, well-finished spaces built for everyday living.
                 </p>
-                <div class="pt-2">
-                  <a href="#contact" data-route="contact" class="inline-flex items-center px-7 py-4 rounded-md bg-copper text-ivory font-semibold text-sm uppercase tracking-wider hover:bg-oak transition">
+                <div class="pt-3 flex flex-wrap gap-4">
+                  <a href="#contact" data-route="contact" class="px-7 py-4 rounded-md bg-copper text-ivory font-semibold text-sm uppercase tracking-wider hover:bg-oak transition">
                     Book a Free Consultation
+                  </a>
+                  <a href="#projects" data-route="projects" class="px-7 py-4 rounded-md border border-graphite text-graphite font-semibold text-sm uppercase tracking-wider hover:bg-graphite hover:text-ivory transition">
+                    See Our Projects
                   </a>
                 </div>
               </div>
+
               <div class="lg:col-span-6">
                 <div class="rounded-xl overflow-hidden border border-stone shadow-lg">
                   <img
-                    src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=85"
+                    src="https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                    referrerpolicy="no-referrer"
                     alt="Residential interior craftsmanship and custom trim details"
                     class="w-full aspect-[4/3] object-cover"
                   />
@@ -1689,6 +1703,7 @@
                   <div class="lg:col-span-5 ${index % 2 === 1 ? 'lg:order-2' : ''}">
                     <img
                       src="${service.heroImage}"
+                      referrerpolicy="no-referrer"
                       alt="${service.imageAlt}"
                       class="w-full h-full min-h-[280px] object-cover"
                       loading="lazy"
@@ -1721,15 +1736,15 @@
                         data-route="${service.route}"
                         class="inline-flex items-center gap-2 px-6 py-3 rounded-md bg-graphite text-ivory text-xs font-semibold uppercase tracking-wider hover:bg-copper transition"
                       >
-                        <span>View ${service.title} Page</span>
+                        <span>View Full Service Page</span>
                         <span aria-hidden="true">&rarr;</span>
                       </a>
                       <a
                         href="#contact"
                         data-route="contact"
-                        class="inline-flex items-center px-6 py-3 rounded-md border border-graphite text-graphite text-xs font-semibold uppercase tracking-wider hover:bg-graphite hover:text-ivory transition"
+                        class="inline-flex items-center gap-2 px-6 py-3 rounded-md border border-graphite text-graphite text-xs font-semibold uppercase tracking-wider hover:bg-graphite hover:text-ivory transition"
                       >
-                        Book a Free Consultation
+                        <span>Request Free Consultation</span>
                       </a>
                     </div>
                   </div>
@@ -1744,7 +1759,7 @@
     }
 
     /**
-     * INDIVIDUAL SERVICE DETAIL PAGE
+     * INDIVIDUAL SERVICE DETAIL PAGE TEMPLATE
      */
     function renderSingleServicePage(serviceId) {
       const service = SERVICES_DATA.find(s => s.id === serviceId) || SERVICES_DATA[0];
@@ -1753,7 +1768,7 @@
       return `
         <section class="bg-graphite text-ivory py-16 lg:py-24 border-b border-slate">
           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-ivory/70 mb-4">
+            <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-ivory/70 mb-4">
               <a href="#services" data-route="services" class="hover:text-copper transition">Services</a>
               <span>/</span>
               <span class="text-copper">${service.title}</span>
@@ -1761,7 +1776,7 @@
             <h1 class="font-display font-extrabold text-5xl sm:text-6xl uppercase text-ivory leading-none max-w-3xl">
               ${service.title}
             </h1>
-            <p class="mt-5 text-ivory/85 text-lg max-w-2xl leading-relaxed">
+            <p class="mt-5 text-ivory/80 text-lg max-w-2xl leading-relaxed">
               ${service.shortSummary}
             </p>
           </div>
@@ -1770,10 +1785,12 @@
         <section class="py-20 lg:py-24 bg-ivory">
           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+              <!-- Main Service Narrative -->
               <div class="lg:col-span-7 space-y-8 reveal">
                 <div class="rounded-xl overflow-hidden border border-stone shadow-md">
                   <img
                     src="${service.heroImage}"
+                    referrerpolicy="no-referrer"
                     alt="${service.imageAlt}"
                     class="w-full aspect-[16/10] object-cover"
                   />
@@ -1910,6 +1927,7 @@
                     <div class="rounded-xl overflow-hidden border border-stone bg-graphite">
                       <img
                         src="${GENUINE_ASSETS.standalone[0].imageUrl}"
+                        referrerpolicy="no-referrer"
                         alt="${GENUINE_ASSETS.standalone[0].alt}"
                         class="w-full max-h-[540px] object-contain mx-auto"
                       />
@@ -2314,6 +2332,17 @@
 
       // Scroll smoothly to top
       window.scrollTo({ top: 0, behavior: 'instant' });
+
+      // Ensure all dynamically rendered images send no-referrer and recover gracefully if needed
+      appRoot.querySelectorAll('img').forEach(img => {
+        img.setAttribute('referrerpolicy', 'no-referrer');
+        img.onerror = function() {
+          if (!this.dataset.retried && this.src.includes('raw.githubusercontent.com')) {
+            this.dataset.retried = 'true';
+            this.src = this.src.replace('raw.githubusercontent.com/CreativeTugsDotCom/SSE/main/', 'cdn.jsdelivr.net/gh/CreativeTugsDotCom/SSE@main/');
+          }
+        };
+      });
 
       // Initialize interactive modules on the newly rendered page
       initBeforeAfterSliders();
