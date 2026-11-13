@@ -135,7 +135,7 @@
       display: block;
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
     }
     .ba-before-wrapper {
       position: absolute;
@@ -143,12 +143,13 @@
       width: 50%;
       overflow: hidden;
       border-right: 2px solid #F5F2EC;
+      background-color: #20272B;
     }
     .ba-before-img {
       display: block;
       height: 100%;
       max-width: none;
-      object-fit: cover;
+      object-fit: contain;
     }
     .ba-handle {
       position: absolute;
@@ -788,13 +789,12 @@
     function renderBeforeAfterSlider(pair, index) {
       return `
         <article class="bg-ivory border border-stone rounded-xl overflow-hidden shadow-sm reveal">
-          <div class="ba-container aspect-[4/3] sm:aspect-[16/11] w-full" data-ba-slider="${pair.id}">
+          <div class="ba-container aspect-[4/3] w-full" data-ba-slider="${pair.id}">
             <!-- AFTER IMAGE (Base layer) -->
             <img
               src="${pair.afterUrl}"
               alt="${pair.afterAlt}"
               class="ba-after-img"
-              loading="lazy"
             />
             <!-- BEFORE IMAGE (Clipped overlay layer) -->
             <div class="ba-before-wrapper" style="width: 50%;">
@@ -802,7 +802,6 @@
                 src="${pair.beforeUrl}"
                 alt="${pair.beforeAlt}"
                 class="ba-before-img"
-                loading="lazy"
               />
             </div>
 
@@ -2337,6 +2336,7 @@
           const rect = container.getBoundingClientRect();
           if (rect.width > 0) {
             beforeImg.style.width = `${rect.width}px`;
+            beforeImg.style.height = `${rect.height}px`;
           }
         }
 
